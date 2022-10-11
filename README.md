@@ -24,7 +24,9 @@ Coordinated Restore is not tied to a particular checkpoint/restore implementatio
 
 * [Results](#results)
 * [JDK](#jdk)
-* [Examples](#examples)
+* [Projects with CRaC support](#projects-with-crac-support)
+  * [Micronaut](#micronaut)
+* [Proof-of-Concept CRaC support implementation](#proof-of-concept-crac-support-implementation)
   * [Tomcat / Sprint Boot](#tomcat--sprint-boot)
   * [Quarkus](#quarkus)
   * [AWS Lambda](#aws-lambda)
@@ -111,7 +113,7 @@ $ sudo tar zxf <jdk>.tar.gz
 * Core support: https://github.com/micronaut-projects/micronaut-crac
   * includes [HikariCP](https://github.com/brettwooldridge/HikariCP) [coordination code](https://github.com/micronaut-projects/micronaut-crac/pull/29)
 
-### Proof-of-Concept CRaC support implementation
+## Proof-of-Concept CRaC support implementation
 
 Proof-of concept CRaC support was implemented in a few third-party frameworks and libraries.
 
