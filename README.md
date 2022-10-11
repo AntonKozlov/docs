@@ -18,7 +18,7 @@ CRaC implementation creates the checkpoint only if the whole Java instance state
 Resources like open files or sockets are cannot, so it is required to release them when checkpoint is made.
 CRaC emits notifications for an application to prepare for the checkpoint and return to operating state after restore.
 
-We (Azul) believe that with a CRaC support in Java frameworks and libraries, applications can benefit from CRaC with little or no changes in the code. Moreover, the required amount of changes in resource management code in the tends to be small, see examples below.
+We (Azul) believe that with a CRaC support in Java frameworks and libraries, applications can benefit from CRaC with little or no changes in the code. Moreover, the required amount of changes in the resource management code tends to be small, see examples below.
 
 Coordinated Restore is not tied to a particular checkpoint/restore implementation and will able to use existing ones (CRIU, docker checkpoint/restore) and ones yet to be developed.
 
@@ -136,7 +136,7 @@ Builds can be found in [Maven Central](https://mvnrepository.com/artifact/io.git
       * `bin/`, `conf/`
     * for general build infrastructure:
       * `build.xml`, `build.properties.default`
-* [Example-spring-boot](https://github.com/CRaC/example-spring-boot) is a sample Spring Boot applicaton using CRaC Tomcat
+* [Example-spring-boot](https://github.com/CRaC/example-spring-boot) is a sample Spring Boot application using CRaC Tomcat
   * [Build script changes](https://github.com/CRaC/example-spring-boot/compare/base..master)
   * [CI](https://github.com/CRaC/example-spring-boot/actions) runs the application on CRaC
 
